@@ -1,16 +1,16 @@
 {
-  "name": "jest-yarn-typescript-test",
+  "name": "jest-npm-typescript-test",
   "version": "0.1.0",
   "author": "Adam Boe",
-  "description": "A repository to test jest working with yarn and typescript",
+  "description": "A repository to test jest working with npm and typescript",
   "engines": {
     "node": ">=16"
   },
   "scripts": {
     "build": "tsc --build",
     "clean": "rimraf build tsconfig.tsbuildinfo",
-    "lint": "yarn eslint . && yarn prettier --check .",
-    "lint-fix": "yarn eslint --fix . && yarn prettier --write .",
+    "lint": "eslint . && prettier --check .",
+    "lint-fix": "eslint --fix . && prettier --write .",
     "test": "jest test"
   },
   "dependencies": {
